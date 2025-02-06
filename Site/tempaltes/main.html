@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background: #EAEAEA;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 230px;
+            background: #F8F9FA;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .menu div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+        }
+        .menu img {
+            width: 20px;
+            height: 20px;
+        }
+        .ai-help {
+            background: #BFDFFF;
+            padding: 12px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: center;
+        }
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 230px;
+            right: 0;
+            height: 55px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+            font-size: 16px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .settings {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .settings img {
+            width: 25px;
+            height: 25px;
+        }
+        .main-content {
+            flex-grow: 1;
+            background: #A4B0F5;
+            margin-left: 230px;
+            margin-top: 55px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu">
+            <div><img src="marks_icon.png" alt="Marks"> Marks</div>
+            <div><img src="chat_icon.png" alt="Chat"> Chat</div>
+            <div><img src="library_icon.png" alt="Library"> Library</div>
+            <div><img src="class_icon.png" alt="Class"> Class</div>
+            <div><img src="calendar_icon.png" alt="Calendar"> Calendar</div>
+            <div><img src="events_icon.png" alt="Events"> Events</div>
+            <div><img src="homework_icon.png" alt="Homework"> Homework</div>
+            <div><img src="progress_icon.png" alt="Progress"> Progress</div>
+        </div>
+        <div class="ai-help">
+            <div><img src="gpt_icon.png" alt="GPT"> GPT</div>
+            <div><img src="deepseek_icon.png" alt="Deepseek"> Deepseek</div>
+            <div><img src="power_icon.png" alt="Power Mode"> Power Mode</div>
+            <label>
+                <input type="checkbox"> On/Off
+            </label>
+        </div>
+    </div>
+    <div class="top-bar">
+        <div>🏠 Home</div>
+        <div>Hello, Name Surname</div>
+        <div class="settings">
+            <div><img src="school_logo.png" alt="School Logo"></div>
+            <div><img src="settings_icon.png" alt="Settings"></div>
+        </div>
+    </div>
+    <div class="main-content"></div>
+</body>
+</html>
